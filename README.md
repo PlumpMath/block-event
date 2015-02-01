@@ -1,5 +1,5 @@
 # block-event
-block-event is an event loop watcher. It alert you with a blocked event if the eventloop stopped more time then the treshold given.
+block-event is an event loop watcher for nodejs. It alert you with a blocked event if the eventloop stopped more time then the given threshold.
 
 ## Installation
 
