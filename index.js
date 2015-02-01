@@ -13,8 +13,9 @@ var EventEmitter = require('events').EventEmitter;
 function BlockEvent(_threshold) {
     var self = this;
     var start = process.hrtime();
-    var loopInterval = 100;  //ms
-    var threshold = _threshold || 10; //ms
+    var loopInterval = 100; //ms
+    
+    this.threshold = _threshold || 10; //ms
 
     EventEmitter.call(this);
 
@@ -35,7 +36,7 @@ function BlockEvent(_threshold) {
         var ms = nanosec / 1e6;
         var n = ms - loopInterval;
         start = process.hrtime();
-        if (n > threshold) {
+        if (n > self.threshold) {
             self.emit('blocked', n);
         }
     }

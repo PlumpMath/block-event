@@ -1,5 +1,5 @@
 # block-event
-block-event is an event loop watcher for nodejs. It alert you with a blocked event if the eventloop stopped more time then the given threshold.
+block-event is an event loop watcher for nodejs. It alerts you with a blocked event when the eventloop stopped more times then the given threshold.
 
 ## Installation
 
@@ -15,15 +15,18 @@ var threshold = 10;  //ms
 var BlockEvent = require('block-event');
 var blockEvent = new BlockEvent(threshold);
 
+blockEvent.threshold === 10; // true
+
+
 blockEvent.on('blocked',function(lagtime){
     console.log("Your eventloop blocked for:"+lagtime+" ms");
 });
 
-// For stop the watcher, use stop(). It emit a watchStopped event.
+// To stop the watcher, use stop(). It emits a watchStopped event.
 
 blockEvent.stop();
 
-// For resume the watcher use resume(). It emit a watchStarted event.
+// To resume the watcher use resume(). It emits a watchStarted event.
 
 blockEvent.resume();
 
