@@ -23,7 +23,7 @@ blockEvent.on('blocked',function(lagtime){
 
 blockEvent.stop();
 
-// For resulme the watcher use resume(). It emit a watchStarted event.
+// For resume the watcher use resume(). It emit a watchStarted event.
 
 blockEvent.resume();
 
