@@ -1,7 +1,7 @@
 {
   "name": "block-event",
   "version": "0.0.1",
-  "description": "block-event is an event loop watcher. It alert you with an blocked event if the eventloop stopped more time then the treshold given.",
+  "description": "block-event is an event loop watcher for nodejs. It alert you with a blocked event if the eventloop stopped more time then the given threshold.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
