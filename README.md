@@ -34,3 +34,10 @@ blockEvent.resume();
 
 The default lag threshold is 10 ms.
 
+## Test
+
+```
+$ npm test
+```
+
+
