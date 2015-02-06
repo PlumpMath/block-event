@@ -1,6 +1,6 @@
 {
     "name": "block-event",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "block-event is an event loop watcher for nodejs. It alerts you with a blocked event when the eventloop stopped more times then the given threshold.",
     "main": "index.js",
     "scripts": {
