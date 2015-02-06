@@ -39,3 +39,10 @@ var avg = blockEvent.avg();
 
 The default lag threshold is 10 ms.
 
+## Test
+
+```
+$ npm test
+```
+
+
