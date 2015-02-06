@@ -32,4 +32,12 @@ describe('BlockEvent', function () {
         blockerFunction();
     });
 
+
+    it("should return a number", function (done) {
+        setTimeout(function () {
+            expect(blockEvent.avg()).to.be.a('number');
+            done();
+        }, 200);
+    });
+
 });

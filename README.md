@@ -30,6 +30,11 @@ blockEvent.stop();
 
 blockEvent.resume();
 
+// To get the average cicyle time use avg():
+
+var avg = blockEvent.avg();
+
+
 ```
 
 The default lag threshold is 10 ms.
