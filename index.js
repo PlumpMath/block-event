@@ -15,6 +15,7 @@ function BlockEvent(_threshold) {
     var start = process.hrtime();
     var loopInterval = 100; //ms
     var average = null;
+    var maximum = 0;
 
     this.threshold = _threshold || 10; //ms
 
@@ -35,6 +36,10 @@ function BlockEvent(_threshold) {
         return average;
     };
 
+    this.max = function max() {
+        return maximum;
+    };
+
 
     function watchEvent() {
         var diff = process.hrtime(start);
@@ -47,6 +52,10 @@ function BlockEvent(_threshold) {
         }
         if (!average) average = n;
         average = (average + n) / 2;
+
+        if (n > maximum) {
+            maximum = n;
+        }
     }
 
     this.resume();

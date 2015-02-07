@@ -35,6 +35,12 @@ blockEvent.resume();
 var avg = blockEvent.avg();
 
 
+// To get the maximum cicyle time use max():
+
+var max = blockEvent.max();
+
+
+
 ```
 
 The default lag threshold is 10 ms.

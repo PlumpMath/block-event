@@ -33,11 +33,23 @@ describe('BlockEvent', function () {
     });
 
 
-    it("should return a number", function (done) {
-        setTimeout(function () {
-            expect(blockEvent.avg()).to.be.a('number');
-            done();
-        }, 200);
+    describe("avg", function () {
+        it("should return a number", function (done) {
+            setTimeout(function () {
+                expect(blockEvent.avg()).to.be.a('number');
+                done();
+            }, 200);
+        });
+    });
+
+
+    describe("max", function () {
+        it("should return a number", function (done) {
+            setTimeout(function () {
+                expect(blockEvent.max()).to.be.a('number');
+                done();
+            }, 200);
+        });
     });
 
 });
