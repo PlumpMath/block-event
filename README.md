@@ -9,6 +9,8 @@ $ npm install block-event
 
 ## How to use
 
+Set up watch
+
 ```javascript
 
 var threshold = 10;  //ms
@@ -22,24 +24,34 @@ blockEvent.on('blocked',function(lagtime){
     console.log("Your eventloop blocked for:"+lagtime+" ms");
 });
 
-// To stop the watcher, use stop(). It emits a watchStopped event.
+```
+
+To stop the watcher, use stop(). It emits a watchStopped event.
+
+```javascript
 
 blockEvent.stop();
+```
 
-// To resume the watcher use resume(). It emits a watchStarted event.
+To resume the watcher use resume(). It emits a watchStarted event.
+
+```javascript
 
 blockEvent.resume();
+```
 
-// To get the average cicyle time use avg():
+To get the average cicyle time use avg():
+
+```javascript
 
 var avg = blockEvent.avg();
+```
 
+To get the maximum cicyle time use max():
 
-// To get the maximum cicyle time use max():
+```javascript
 
 var max = blockEvent.max();
-
-
 
 ```
 
