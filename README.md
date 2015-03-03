@@ -29,30 +29,25 @@ blockEvent.on('blocked',function(lagtime){
 To stop the watcher, use stop(). It emits a watchStopped event.
 
 ```javascript
-
 blockEvent.stop();
 ```
 
 To resume the watcher use resume(). It emits a watchStarted event.
 
 ```javascript
-
 blockEvent.resume();
 ```
 
 To get the average cicyle time use avg():
 
 ```javascript
-
 var avg = blockEvent.avg();
 ```
 
 To get the maximum cicyle time use max():
 
 ```javascript
-
 var max = blockEvent.max();
-
 ```
 
 The default lag threshold is 10 ms.
