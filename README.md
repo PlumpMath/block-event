@@ -1,4 +1,7 @@
 # block-event
+
+[![Build Status](https://travis-ci.org/adamrecsko/block-event.svg?branch=master)](https://travis-ci.org/adamrecsko/block-event)
+
 block-event is an event loop watcher for nodejs. It alerts you with a blocked event when the eventloop stopped more times then the given threshold.
 
 ## Installation
